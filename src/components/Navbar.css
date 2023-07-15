@@ -1,0 +1,62 @@
+.navbar {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: right;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-item {
+  margin-right: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list :first-child {
+  margin-right: auto;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: large;
+}
+
+.navbar-item a:hover{
+  color: orange;
+}
+
+.navbar-logo {
+  width: 100px; /* Ajusta el ancho de la imagen según tus necesidades */
+  height: 100%; /* Permite que la altura se ajuste automáticamente según la proporción de la imagen */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height: 100%;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+  }
+
+  .navbar-list :first-child {
+    margin-right: 0;
+  }
+
+  .navbar-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
