@@ -35,6 +35,7 @@
 
 .navbar-item a:hover{
   color: orange;
+  transition: 0.5s;
 }
 
 .navbar-logo {
